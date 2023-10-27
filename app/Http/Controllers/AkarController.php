@@ -21,7 +21,7 @@ class AkarController extends Controller
     public function hitung(Request $request){
         $start_time = microtime(true); 
         $request->validate([
-            'billangan' => 'required|numeric|min:1',
+            'billangan' => 'required|numeric|min:0',
         ]);
 
         
@@ -66,7 +66,7 @@ class AkarController extends Controller
         $start_time = microtime(true); 
         
         $request->validate([
-            'bilangan' => 'required|numeric|min:1',
+            'bilangan' => 'required|numeric|min:0',
         ]);
         // dd($request->bilangann);
         
